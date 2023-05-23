@@ -3,7 +3,7 @@ import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
 import ExpenseDetails from "./ExpenseDetails";
 import Card from "../UI/Card";
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   return (
     <>
       <Card className="expense-item">
@@ -17,7 +17,7 @@ function ExpenseItem(props) {
       </Card>
     </>
   );
-}
+};
 
 export default ExpenseItem;
 // we use export for use this component into another file
