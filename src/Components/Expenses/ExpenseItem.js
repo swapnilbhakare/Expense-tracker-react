@@ -4,6 +4,10 @@ import ExpenseDate from "./ExpenseDate";
 import ExpenseDetails from "./ExpenseDetails";
 import Card from "../UI/Card";
 const ExpenseItem = (props) => {
+  const clickHandler = () => {
+    console.log("clicked!!");
+  };
+  const deleteHandler = (evenet) => {};
   return (
     <>
       <Card className="expense-item">
@@ -14,6 +18,10 @@ const ExpenseItem = (props) => {
           location={props.location}
           amount={props.amount}
         />
+        <button onClick={clickHandler}>Change Title</button>
+        <button className="deleteButton" onClick={deleteHandler}>
+          Delete Expense
+        </button>
       </Card>
     </>
   );
